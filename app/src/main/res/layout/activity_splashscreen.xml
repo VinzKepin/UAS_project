@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="355dp"
+        android:layout_height="475dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="Logo Obatku"
+        android:src="@drawable/logo_obatku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Teks Legal di bawah layar -->
+    <TextView
+        android:id="@+id/legalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Legal Notice   Cookie Policy   Privacy Policy\n©2025 Obatku Aplikasi"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
