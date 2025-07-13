@@ -32,6 +32,15 @@
             android:exported="true" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".DetailProdukActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+
+
+
 
     </application>
 
