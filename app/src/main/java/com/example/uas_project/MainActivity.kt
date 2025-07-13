@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupProduk() {
         val produkList = listOf(
-            Produk("Minyak Ikan", R.drawable.fish_oil, "Membantu menjaga kesehatan jantung", 30000),
-            Produk("Gaviscon", R.drawable.gaviscon, "Obat untuk mengatasi sakit maag", 25000),
-            Produk("Vicks Vaporub", R.drawable.vicks, "Meredakan gejala flu dan pilek", 15000)
+            Produk("Minyak Ikan", R.drawable.fish_oil, "Suplemen alami yang mengandung asam lemak omega-3 (EPA & DHA) yang bermanfaat untuk menjaga kesehatan jantung, menurunkan kadar trigliserida, serta mendukung fungsi otak dan sendi. Cocok untuk dikonsumsi rutin guna mendukung gaya hidup sehat.", 30000),
+            Produk("Gaviscon", R.drawable.gaviscon, "Obat yang bekerja cepat meredakan gejala sakit maag, nyeri ulu hati, dan asam lambung naik. Gaviscon membentuk lapisan pelindung di atas isi lambung untuk mencegah iritasi pada kerongkongan, memberikan rasa lega dalam hitungan menit. Cocok untuk digunakan setelah makan atau saat gejala muncul.", 25000),
+            Produk("Vicks Vaporub", R.drawable.vicks, "Balsam oles yang efektif meredakan gejala flu seperti hidung tersumbat, batuk, dan pegal-pegal. Mengandung menthol, camphor, dan eucalyptus oil yang memberikan sensasi hangat dan melegakan saluran pernapasan. Cocok digunakan sebelum tidur untuk tidur lebih nyenyak saat flu.", 15000)
         )
 
         val produkAdapter = ProdukAdapter(produkList)

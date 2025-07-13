@@ -25,7 +25,17 @@ class DetailProdukActivity : AppCompatActivity() {
         binding.tvDeskripsiProduk.text = deskripsi
         binding.tvHargaProduk.text = "Rp $harga"
         binding.btnTambahKeranjang.setOnClickListener {
+            val item = KeranjangItem(
+                nama = nama ?: "",
+                gambarResId = gambar,
+                harga = harga?: 0
+            )
+            KeranjangManager.tambahItem(item)
+            Toast.makeText(this, "Berhasil ditambahkan ke keranjang", Toast.LENGTH_SHORT).show()
+        }
+        binding.btnTambahKeranjang.setOnClickListener {
             Toast.makeText(this, "$nama ditambahkan ke keranjang", Toast.LENGTH_SHORT).show()
+
         }
     }
 }

@@ -1,48 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    tools:context=".DetailProdukActivity">
+    android:background="#FAF9FF"
+    android:fillViewport="true">
 
-    <ImageView
-        android:id="@+id/ivGambarProduk"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center_horizontal"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_launcher_foreground" />
-
-    <TextView
-        android:id="@+id/tvNamaProduk"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Nama Produk"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center" />
-    <TextView
-        android:id="@+id/tvDeskripsiProduk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FAF9FF">
 
-    <TextView
-        android:id="@+id/tvHargaProduk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        <!-- Gambar Produk (ambil 50% layar) -->
+        <ImageView
+            android:id="@+id/iv_gambar_produk"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:contentDescription="Gambar Produk" />
 
-    <Button
-        android:id="@+id/btnTambahKeranjang"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tambah ke Keranjang"
-        android:layout_marginTop="16dp"/>
+        <!-- Konten Detail -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="24dp">
 
-</LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <!-- Nama Produk -->
+                <TextView
+                    android:id="@+id/tv_nama_produk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Produk"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Deskripsi -->
+                <TextView
+                    android:id="@+id/tv_deskripsi_produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi produk ini sangat membantu menjaga kesehatan tubuh."
+                    android:textSize="15sp"
+                    android:textColor="#666666"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Harga -->
+                <TextView
+                    android:id="@+id/tv_harga_produk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 30.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#4CAF50"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Tombol -->
+                <Button
+                    android:id="@+id/btn_tambah_keranjang"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Tambah ke Keranjang"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rounded_button"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>
