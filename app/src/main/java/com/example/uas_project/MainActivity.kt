@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
         binding.bannerViewPager.adapter = bannerAdapter
     }
 
-
     private fun setupProduk() {
         val produkList = listOf(
             Produk("Minyak Ikan", R.drawable.fish_oil, "Membantu menjaga kesehatan jantung", 30000),

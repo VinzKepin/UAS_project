@@ -38,6 +38,8 @@ class ProdukAdapter(private val list: List<Produk>) :
                 putExtra("deskripsi_produk", produk.deskripsi)
                 putExtra("harga_produk", produk.harga)
             }
+            context.startActivity(intent)
         }
     }
+
 }
