@@ -38,6 +38,8 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".EditProfileActivity" />
+        <activity android:name=".KeranjangActivity" />
+
 
 
 

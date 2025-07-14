@@ -4,5 +4,5 @@ data class KeranjangItem(
     val nama: String,
     val gambarResId: Int,
     val harga: Int,
-    val jumlah: Int = 1
+    var jumlah: Int
 )
